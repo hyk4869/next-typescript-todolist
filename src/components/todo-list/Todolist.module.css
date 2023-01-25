@@ -1,0 +1,188 @@
+.allCategories{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 120px;
+    top: 50px;
+    
+}
+
+
+.logoNext{
+    margin-right: 10px;
+}
+
+.logoType{
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width:1485px){
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        right: 0;
+        
+    }
+    .logoNext{
+        margin-right: 10px;
+    }
+    
+    .logoType{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:767px){
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 10px;
+        top: 10px;
+        right: 0;
+        
+    }
+    .logoNext{
+        margin-right: 10px;
+    }
+    
+    .logoType{
+        margin-left: 10px;
+    }
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+    color: rgba(119, 0, 255, 0.493);
+    padding: 10px;
+
+}
+
+.h2{
+    display: flex;
+    justify-content: center;
+    color: rgba(113, 111, 114, 0.596);
+    padding: 10px;
+
+}
+
+.inputValue{
+    position: relative;
+    top: 10px;
+    padding: 10px;
+}
+
+.value{
+    margin: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid;
+}
+
+.addBtn{
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.25s;
+    border: 1px solid;
+    user-select: none;
+}
+
+.addBtn:hover{
+    background-color: rgb(173, 239, 255);
+}
+
+.addBtn:active{
+    margin-top: 6px;
+    border-bottom: none;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+
+.addedTask{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.todoList{
+    position: relative;
+    top: 50px;
+
+}
+
+.divList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.pParent{
+
+}
+
+.p{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+
+}
+
+.btnParent{
+    padding-left: 20px;
+}
+
+.inputBtn{
+
+}
+
+.inputLabel{
+    padding-right: 20px;
+    font-size: 20px;
+
+}
+
+.DeleteBtn{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+    user-select: none;
+    width: 100px;
+    transition: 0.25s;
+}
+
+.DeleteBtn:hover{
+    background-color: rgb(255, 173, 173);
+}
+
+.DeleteBtn:active{
+    margin-top: 6px;
+    border-bottom: none;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
