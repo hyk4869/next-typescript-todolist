@@ -73,8 +73,9 @@ export function Todolist() {
                             <input type="text" defaultValue={task.list} className={styles.p} disabled={task.checked}/>
                         </div>
                         <div className={styles.btnParent}>
-                            <input type="checkbox" id="checkbox" className={styles.inputBtn}/>
-                            <label htmlFor="checkbox" className={styles.inputLabel} onClick={() =>handleChecked(task.id,task.checked)}>Edit</label>
+                            <div className={styles.btnChild}>
+                                <input type="checkbox" id="checkbox" className={styles.inputBtn} value={task.list} onClick={() =>handleChecked(task.id, task.checked)}/>Edit
+                            </div>
                             <button className={styles.DeleteBtn} onClick={()=>handledelete(task.id)}>Delete</button>
                         </div>
                     </div>
